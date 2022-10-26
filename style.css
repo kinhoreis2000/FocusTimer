@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+header {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+
+body {
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+
+}
+
+body.dark {
+  background: #323238;
+}
+main {
+  display: flex;
+  gap: 19.2rem;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+
+}
+main h1 {
+  display: flex;
+  gap: 0;
+}
+h1 {
+  font-weight: 500;
+  font-size: 12.6166rem;
+  line-height: 14.8rem;
+  text-transform: uppercase;
+  color: #323238;
+}
+
+h1.dark {
+  color:#ffffff; 
+}
+
+.controls {
+  display: flex;
+  width: 4.8rem;
+  height: 4.8rem; 
+  gap: 3.2rem;
+}
+
+
+.sound-cards {
+  width: 5.6rem;
+  height: 5.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-right: 10rem;
+
+
+}
+
+.sound-cards svg {
+  padding: 2rem;
+  background: #E1E1E6;
+  border-radius: 24px;
+
+}
+.sound-cards button {
+  position: relative;
+}
+
+.sound-cards input{
+  position: absolute;
+  
+  bottom: 0.5rem;
+  left: 1rem;
+  
+  width: 8rem;
+}
+.sound-cards .dark svg   {
+  background: #29292E;
+
+}
+
+.hide {
+  display: none;
+
+}
+
+.selected svg{
+
+  background: #0404f6;
+  border-radius: 24px;
+}
